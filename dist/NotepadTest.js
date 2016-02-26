@@ -33,15 +33,11 @@ var NotepadTest = function () {
       var notepad = new _Notepad2.default();
       var note = new _Note2.default();
 
-      var expected = [{
-        'name': 'New Note',
-        'content': 'Hello World',
-        'lastModified': new Date()
-      }];
-
       notepad.addNote(note);
 
-      var actual = notepad.getNotes();
+      var expected = 1;
+
+      var actual = notepad.getNotes().length;
 
       return _Assert2.default.equals(expected, actual);
     }

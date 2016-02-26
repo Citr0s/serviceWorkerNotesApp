@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -14,32 +14,33 @@ var Assert = function () {
   }
 
   _createClass(Assert, null, [{
-    key: "equals",
+    key: 'equals',
     value: function equals(expected, actual) {
-      return expected === actual;
+      var result = expected === actual;
+      return result ? result : console.log('Expected: ', expected, '\nActual: ', actual);
     }
   }, {
-    key: "notEquals",
+    key: 'notEquals',
     value: function notEquals(expected, actual) {
       return expected !== actual;
     }
   }, {
-    key: "isTrue",
+    key: 'isTrue',
     value: function isTrue(value) {
       return value === true;
     }
   }, {
-    key: "isFalse",
+    key: 'isFalse',
     value: function isFalse(value) {
       return value === false;
     }
   }, {
-    key: "isNull",
+    key: 'isNull',
     value: function isNull(value) {
       return value === null;
     }
   }, {
-    key: "isUndefined",
+    key: 'isUndefined',
     value: function isUndefined(value) {
       return value === undefined;
     }

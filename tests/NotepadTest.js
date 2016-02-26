@@ -7,17 +7,11 @@ export default class NotepadTest {
     var notepad = new Notepad();
     var note = new Note();
 
-    var expected = [
-      {
-        'name': 'New Note',
-        'content': 'Hello World',
-        'lastModified': new Date(),
-      }
-    ];
-
     notepad.addNote(note);
 
-    var actual = notepad.getNotes();
+    var expected = 1;
+
+    var actual = notepad.getNotes().length;
 
     return Assert.equals(expected, actual);
   }

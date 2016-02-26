@@ -14,10 +14,10 @@ var _Note2 = _interopRequireDefault(_Note);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _bootstrap2.default)();
-// bootstrap();
+_bootstrap2.default.tests();
+// bootstrap.bootstrap();
 
 var notepad = new _Notepad2.default();
 
 var note = new _Note2.default();
-console.log(note.toString());
+// console.log(note.toString());
