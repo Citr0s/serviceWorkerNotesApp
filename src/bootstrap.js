@@ -28,10 +28,10 @@ export default class bootstrap {
     }
   }
   static bootstrap(){
-    // //Make IE play nice with HTML5 elements
-    // document.createElement('header');
-    // document.createElement('section');
-    // document.createElement('article');
-    // document.createElement('footer');
+    // Make IE play nice with HTML5 elements
+    document.createElement('header');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
   }
 }
